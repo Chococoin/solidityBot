@@ -10,7 +10,7 @@ const app = new Telegraf(telegramApiKey)
 var tarea1 =
 '\
 Tarea 1\n\
-1.- ¿Qué son los tipos de datos? \n\t/definicion_de_tipos_de_datos, \n\t/boolean, \n\tInteger, \n\tString, \n\tFloat, \n\tArray, \n\tTuple, \n\tObjecto.\n Lo pueden hacer tomando ejemplos en Python y en Javascript. \n\
+1.- ¿Qué son los tipos de datos? \n\t/definicion_de_tipos_de_datos, \n\t/boolean, \n\t/integer, \n\tString, \n\tFloat, \n\tArray, \n\tTuple, \n\tObjecto.\n Lo pueden hacer tomando ejemplos en Python y en Javascript. \n\
 2.- ¿Qué son las Variables y las Constantes? \n\
 3.- ¿Qué son las funciones?\ \n\
 Y finalmente...\
@@ -61,12 +61,13 @@ var content =
 Definición tipo de datos\n\
 /definicion_tipo_dato\n\n\
 /booleanos\n\n\
-/boolean\
+/boolean\n\n\
+/integer\n\n\
 '
 
 // Start command
 app.command('/start', ( ctx ) => {
-    ctx.reply('Bienvenid@! Soy el 🤖 bot del grupo de clases de Solidity salido de criptocositas de Platzi. Mi misión es ayudarte en todo lo posible para que te conviertas en un programador de Smart Contracts lo más rápido posible. Conmigo puedes revisar las tareas y repasar los conceptos fundamentales. Si quieres que yo realice nuevas tareas sugierelo a Germán, juntos podemos hacer grandes cosas. Para revisar las tareas pincha aquí /tareas para revizar el contenido del taller pincha /contenido. Si no recuerdas los comandos pide /ayuda')
+    ctx.reply('Bienvenid@! Soy el 🤖 bot del grupo de clases de Solidity salido de criptocositas de Platzi. Mi misión es ayudarte en todo lo posible para que te conviertas en un programador de Smart Contracts lo más rápido posible. Conmigo puedes revisar las tareas y repasar los conceptos fundamentales. Si quieres que yo realice nuevas tareas sugierelo a Germán, juntos podemos hacer grandes cosas. Para revisar las tareas pincha aquí /tareas para revisar el contenido del taller pincha /contenido. Si no recuerdas los comandos pide /ayuda')
 })
 
 app.command('/tareas', ( ctx ) => {
