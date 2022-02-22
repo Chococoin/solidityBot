@@ -58,11 +58,10 @@ siendo un poco más elaborados podrían no agruparse con los primitivos, aquí p
 
 var content =
 '\
-Definición tipo de datos\n\
-/definicion_tipo_dato\n\n\
-/booleanos\n\n\
-/boolean\n\n\
-/integer\n\n\
+Definición tipo de datos\n\n\
+/definicion_tipo_dato\n\
+/boolean\n\
+/integer\n\
 '
 
 // Start command
