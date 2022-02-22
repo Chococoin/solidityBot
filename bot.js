@@ -38,7 +38,7 @@ En otros contextos todo lo que no sea 0, o nulo (null) o indefinido (undefined),
 '
 
 var respuesta_al_compilador =
-'Para responder a esta pregunta debes pensar en números binarios como seguramente habrás imaginado. La respuesta es "10101110".\n'^
+'Para responder a esta pregunta debes pensar en números binarios como seguramente habrás imaginado. La respuesta es "10101110".\n'
 
 var entero =
 '¿Qué es un "integer" o entero?\n\n\
