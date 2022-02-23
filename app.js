@@ -10,7 +10,7 @@ const app = new Telegraf(telegramApiKey)
 var tarea1 =
 '\
 Tarea 1\n\
-1.- ¿Qué son los tipos de datos? \n\t/definicion_de_tipos_de_datos, \n\t/boolean, \n\t/integer, \n\tString, \n\tFloat, \n\tArray, \n\tTuple, \n\tObjecto.\n Lo pueden hacer tomando ejemplos en Python y en Javascript. \n\
+1.- ¿Qué son los tipos de datos? \n\t/definicion_de_tipos_de_datos, \n\t/boolean, \n\t/integer, \n\t/float, \n\tString, \n\tArray, \n\tTuple, \n\tObjecto.\n Lo pueden hacer tomando ejemplos en Python y en Javascript. \n\
 2.- ¿Qué son las Variables y las Constantes? \n\
 3.- ¿Qué son las funciones?\ \n\
 Y finalmente...\
@@ -22,10 +22,10 @@ Segunda Tarea:\n\n\
 1.- ¿Qué significa declaración y asignación de una Variable?\n\n\
 2.- Hablando de funciones. ¿Qué es un argumento y en qué se diferencia de un parámetro?\n\n\
 3.- ¿Qué es un método y en qué se diferencia de una función? (Se necesita saber muy bien que es una clase para poder responder a esta pregunta)\n\n\
-4.- ¿ Cuáles son los operadores matemáticos ? Similitudes y Diferencias entre operadores matemáticos de Javascript y Python.\n\n\
+4.- ¿Cuáles son los operadores matemáticos? Similitudes y Diferencias entre operadores matemáticos de Javascript y Python.\n\n\
 5.- ¿Cuáles son los Operadores Lógicos? Similitudes y diferencias entre Javascript y Python.\n\n\
 6.- Responde con "Sí" o "No":. A) ¿Son todos los operadores matemáticos compatibles con todos los tipos de datos? B) ¿Son todos los operadores Lógicos compatibles con todos lo tipos de datos? C) ¿Pueden algunos operadores lógicos o matemáticos trabajar con diferentes tipos de datos contemporáneamente?\n\n\
-7.- ¿Cuáles son los tipo de dato en Solidity?\n\
+7.- ¿Cuáles son los tipos de datos en Solidity?\n\
 '
 
 var boleano = 
@@ -46,6 +46,36 @@ Un integer es un numero entero, 0,1,2,3... y no, no llegan hasta el infinito. Un
 Imagina esto por un momento, que tú eres el compilador de un lenguaje de programación extraño que asigna 8 bits de recursos para guardar la información de cualquier entero ¿Cómo guardarías el número 174 dentro de esos 8 bits? -> acá la solución de este problema. \/problema_del_compilador.\
 '
 
+var numero_de_punto_flotante =
+'¿Qué es un número de punto (o coma) flotante?\
+Ya les comenté que los enteros son números naturales y estos son muy comodos para contar cosas "enteras". Pero ¿Qué pasa cuando queremos contar fracciones o dividir un número entero impar (como el uno) por un número par (como el 2)?\
+Pues depende del lenguaje, en los lenguajes más extrictos como los de tipado estatico eso puede constituir una fuente de error (el programa se detiene bruscamente sin llegar a terminar). En cambio en lenguajes con tipado dinamico es muy posible que no se de un error\
+y este es precisamente el problema de los lenguajes de tipado dinamicos que en ocaciones dan "errores silenciosos" que es una de las cosas más horribles que pueden suceder en la programación. Pero para ver esto con más detalles continuemos a aprender lo que es un número de punto flotante.\
+Un numero de punto flotante ("float") es un número irracional o mejor entendido como un número con decimales. Ejemplo: 21 es un Int (entero) -> 21.0 es un número con decimal y por lo tanto un número de punto flotante. Observen que el valor absoluto de ambos números es el mismo, sin embargo \
+para la computadora son dos números de tipos distintos con el mismo valor.\n\n\
+Una curiosidad de Solidity es que NO POSEE un equivalente de este tipo de datos. Para Solidity todos los números son enteros.\n\n\
+¡Tareitas Extra!\
+¿Podrías encontrar una explicación de porque en Solidity no existe el tipo de dato para números de punto flotante?\
+¿Qué sucede en Solidity si un entero impar es dividido por un entero par?\
+¿Qué sucede en Solidity si dividimos 10 entre 3?\
+(Pista: No existe el lenguaje perfecto, y Solidity no es la exepción de esta regla.)\
+'
+
+var string =
+'¿Qué es una estringa?\
+Hasta ahora hemos visto tipos de datos que representan números. ¿Pero qué pasa cuando necesitamos representar caracteres de letras o emojis*?\
+Pues respuesta es el tipo de datos llamado estringa o string (cuerda). Como vimos antes una sucesión de bits en la memoria como el 10101110 que vimos anteriormente puede ser interpretado como el número decimal 174. Sin embargo, cuando \
+la computadora sabe que el tipo de dato es una estringa entonces aplicará otra interpretación a dicha sucesión de unos y ceros. Según el lenguaje esta interpretación dependera por cual standar de codificación usa dicho lenguaje el primer estandar de caracteres fue ASCII. \
+No se preocupen por aprender de memoria lo que aquí estamos hablando pues son conceptos generales que se aplican en todos los lenguajes y no a solidity en expecifico y tampoco nos interesa tanto (por ahora) entender como Solidity codifica las estringas.\
+Lo realmente importante es saber como le debemos presentar a nuestra computadora una información que contiene letras y por lo tanto debe ser del tipo estringa.\
+No te vayas confundir porque es realmente muy fácil.\n\n\
+Todo lo que debes hacer es encerrar tu sucesión de letras y caracteres con entre dos de estos -> \' <- (comilla simple o apóstrofe)\ o dos de estos -> " <- (comilla doble).\n\n\
+"Esto es una estringa creada con comillas dobles"\n\n\
+\'Esta es una estringa creada con comillas simples\'\n\n\
+¡Tareitas Extra!\
+¿Qué pasa si dentro de mi sucesión de caracteres quiero colocar un apostrofe y estoy creando la estringa con comillas simples o al contrario, quiero colocar dentro de mi estringa unas comillas dobles y he creado la estringa con comillas dobles.? ¿No estaré confundiendo a la computadora así?\
+'
+
 var definicion_tipo_dato =
 '¿Qué son los tipos de datos?\n\n\
 En el universo todo es energía que nunca se destruye; solo se transforma.\
@@ -58,10 +88,11 @@ siendo un poco más elaborados podrían no agruparse con los primitivos, aquí p
 
 var content =
 '\
-Definición tipo de datos\n\n\
+Tipos de datos\n\n\
 /definicion_tipo_dato\n\
 /boolean\n\
 /integer\n\
+/float\n\
 '
 
 // Start command
@@ -91,6 +122,10 @@ app.command('/boolean', ( ctx ) => {
 
 app.command('/integer', ( ctx ) => {
     ctx.reply(entero)
+})
+
+app.command('/float', ( ctx ) => {
+    ctx.reply(numero_de_punto_flotante)
 })
 
 app.command('/definicion_de_tipos_de_datos', ( ctx ) => {
