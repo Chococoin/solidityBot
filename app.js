@@ -62,7 +62,7 @@ Una curiosidad de Solidity es que NO POSEE un equivalente de este tipo de datos.
 '
 
 var estringa =
-'¿Qué es una estringa?\
+'¿Qué es una estringa?\n\n\
 Hasta ahora hemos visto tipos de datos que representan números. ¿Pero qué pasa cuando necesitamos representar caracteres de letras o emojis*?\
 Pues respuesta es el tipo de datos llamado estringa o string (cuerda). Como vimos antes una sucesión de bits en la memoria como el 10101110 que vimos anteriormente puede ser interpretado como el número decimal 174. Sin embargo, cuando \
 la computadora sabe que el tipo de dato es una estringa entonces aplicará otra interpretación a dicha sucesión de unos y ceros. Según el lenguaje esta interpretación dependera por cual standar de codificación usa dicho lenguaje el primer estandar de caracteres fue ASCII. \
