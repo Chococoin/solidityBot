@@ -61,7 +61,7 @@ Una curiosidad de Solidity es que NO POSEE un equivalente de este tipo de datos.
 (Pista: No existe el lenguaje perfecto, y Solidity no es la exepción de esta regla.)\
 '
 
-var string =
+var estringa =
 '¿Qué es una estringa?\
 Hasta ahora hemos visto tipos de datos que representan números. ¿Pero qué pasa cuando necesitamos representar caracteres de letras o emojis*?\
 Pues respuesta es el tipo de datos llamado estringa o string (cuerda). Como vimos antes una sucesión de bits en la memoria como el 10101110 que vimos anteriormente puede ser interpretado como el número decimal 174. Sin embargo, cuando \
@@ -116,6 +116,10 @@ app.command('/ayuda', ( ctx ) => {
     ctx.reply('Inicia con \/start, ve lo que de allí te interesa.')
 })
 
+app.command('/definicion_de_tipos_de_datos', ( ctx ) => {
+    ctx.reply(definicion_tipo_dato)
+})
+
 app.command('/boolean', ( ctx ) => {
     ctx.reply(boleano)
 })
@@ -128,8 +132,8 @@ app.command('/float', ( ctx ) => {
     ctx.reply(numero_de_punto_flotante)
 })
 
-app.command('/definicion_de_tipos_de_datos', ( ctx ) => {
-    ctx.reply(definicion_tipo_dato)
+app.command('/string', ( ctx ) => {
+    ctx.reply(estringa)
 })
 
 app.command('/contenido', ( ctx ) => {
