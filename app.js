@@ -72,7 +72,7 @@ No te vayas confundir porque es realmente muy fácil.\n\n\
 Todo lo que debes hacer es encerrar tu sucesión de letras y caracteres con entre dos de estos -> \' <- (comilla simple o apóstrofe)\ o dos de estos -> " <- (comilla doble).\n\n\
 "Esto es una estringa creada con comillas dobles"\n\n\
 \'Esta es una estringa creada con comillas simples\'\n\n\
-¡Tareitas Extra!\
+¡Tareitas Extra!\n\n\
 ¿Qué pasa si dentro de mi sucesión de caracteres quiero colocar un apostrofe y estoy creando la estringa con comillas simples o al contrario, quiero colocar dentro de mi estringa unas comillas dobles y he creado la estringa con comillas dobles.? ¿No estaré confundiendo a la computadora así?\
 '
 
