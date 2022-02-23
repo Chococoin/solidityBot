@@ -10,7 +10,7 @@ const app = new Telegraf(telegramApiKey)
 var tarea1 =
 '\
 Tarea 1\n\
-1.- ¿Qué son los tipos de datos? \n\t/definicion_de_tipos_de_datos, \n\t/boolean, \n\t/integer, \n\t/float, \n\tString, \n\tArray, \n\tTuple, \n\tObjecto.\n Lo pueden hacer tomando ejemplos en Python y en Javascript. \n\
+1.- ¿Qué son los tipos de datos? \n\t/definicion_de_tipos_de_datos, \n\t/boolean, \n\t/integer, \n\t/float, \n\t/string, \n\tArray, \n\tTuple, \n\tObjecto.\n Lo pueden hacer tomando ejemplos en Python y en Javascript. \n\
 2.- ¿Qué son las Variables y las Constantes? \n\
 3.- ¿Qué son las funciones?\ \n\
 Y finalmente...\
