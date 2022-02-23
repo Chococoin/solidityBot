@@ -2,3 +2,4 @@
 .stripeApiKey
 .telegramApiKey
 .DS_Store
+.token
