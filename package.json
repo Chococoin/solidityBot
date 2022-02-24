@@ -2,15 +2,18 @@
   "name": "chocobot",
   "version": "1.0.0",
   "description": "",
-  "main": "bot.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon bot.js"
+    "start": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "telegraf": "^4.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
