@@ -72,6 +72,7 @@ No te vayas confundir porque es realmente muy fácil.\n\n\
 Todo lo que debes hacer es encerrar tu sucesión de letras y caracteres con entre dos de estos -> \' <- (comilla simple o apóstrofe)\ o dos de estos -> " <- (comilla doble).\n\n\
 "Esto es una estringa creada con comillas dobles"\n\n\
 \'Esta es una estringa creada con comillas simples\'\n\n\
+Una estringa ya no es un tipo de dato primitivo. Pertenece al grupo de objetos.\n\
 ¡Tareitas Extra!\n\n\
 ¿Qué pasa si dentro de mi sucesión de caracteres quiero colocar un apostrofe y estoy creando la estringa con comillas simples o al contrario, quiero colocar dentro de mi estringa unas comillas dobles y he creado la estringa con comillas dobles.? ¿No estaré confundiendo a la computadora así?\
 '
@@ -86,6 +87,20 @@ como boleanos, números enteros, números de punto flotante y cuerdas o estringa
 siendo un poco más elaborados podrían no agruparse con los primitivos, aquí podemos mencionar las listas o arrays, los objetos (super importantes) o diccionarios y las funciones o procesos.\
 '
 
+var arreglo =
+'¿Qué es un arreglo?\n\n\
+Un arreglo es como un gabetero, en donde puedo colocar dentro cualquier cantidad de información de cualquiera de los tipos de datos que hemos visto y muchos otros, (inclusive este).\
+Es decir un arreglo puede contener en la primera "gabeta" (la gabeta número 0) un booleano, en la segunda gabeta (la número 1) una stringa, en la tercera gabeta (la número 2) un número de punto flotante\
+Este gabetero tiene una peculiaridad, puede tener un número de gabetas preestablecidas o se puede crear con una capacidad de ilimitadas gabetas (siempre según los limites de nuestro sistema) \
+que le agregamos "modularmente" en la medida lo vamos utilizando\. Lo realmente importante de estos arrays es la manera en como le guardamos información y como sacamos información de ellas. Para eso nos servimos \
+del llamado index\ o el número con el que vienen enumeradas las gabetas. El primer "slot" o gabeta tiene el número entero cero. Ilustremoslo así [ 0 ] recordando que las dos llaves cuadras (o corchetes) "[]" representan un array vacio.\
+En este otro array vas a ver un string con la palabra \'cero\' en el primer slot y con el número de punto flotante en el segúndo slot (de indice 1): [\'cero\', 1.0].\
+Observa que los slots estan separados por una coma. Ahora imagina que a nuestro arreglo lo llamamos gabetero literalmente.\ Para acceder el slot uno existe una sintaxis muy popular en muchos lenguajes de programación.\
+gabetero[0] nos dará el string \'cero\' y la sintaxis gabetero[1] que apunta al slot número dos nos dará el número de punto flotante 1.0\
+Esto lo estudiaremos muy bien cuando veamos las variables y las constantes.\
+Los arreglos son también tipos de dato del grupo de los objetos.\
+'
+
 var content =
 '\
 Tipos de datos\n\n\
@@ -93,6 +108,8 @@ Tipos de datos\n\n\
 /boolean\n\
 /integer\n\
 /float\n\
+/string\n\
+/array\n\
 '
 
 // Start command
@@ -134,6 +151,10 @@ app.command('/float', ( ctx ) => {
 
 app.command('/string', ( ctx ) => {
     ctx.reply(estringa)
+})
+
+app.command('/array', ( ctx ) => {
+    ctx.reply(arreglo)
 })
 
 app.command('/contenido', ( ctx ) => {
