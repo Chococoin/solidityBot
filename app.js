@@ -10,7 +10,7 @@ const app = new Telegraf(telegramApiKey)
 var tarea1 =
 '\
 Tarea 1\n\
-1.- ¿Qué son los tipos de datos? \n\t/definicion_de_tipos_de_datos, \n\t/boolean, \n\t/integer, \n\t/float, \n\t/string, \n\t/array, \n\tTuple, \n\tObjecto.\n Lo pueden hacer tomando ejemplos en Python y en Javascript. \n\
+1.- ¿Qué son los tipos de datos? \n\t/definicion_de_tipos_de_datos, \n\t/boolean, \n\t/integer, \n\t/float, \n\t/string, \n\t/array, \n\t/tuple, \n\tObjecto.\n Lo pueden hacer tomando ejemplos en Python y en Javascript. \n\
 2.- ¿Qué son las Variables y las Constantes? \n\
 3.- ¿Qué son las funciones?\ \n\
 Y finalmente...\
@@ -102,17 +102,9 @@ Los arreglos son también tipos de dato del grupo de los objetos.\
 '
 
 var tupla =
-'¿Qué es un arreglo?\n\n\
-Un arreglo es como un gabetero, en donde puedo colocar dentro cualquier cantidad de información de cualquiera de los tipos de datos que hemos visto y muchos otros, (inclusive este).\
-Es decir un arreglo puede contener en la primera "gabeta" (la gabeta número 0) un booleano, en la segunda gabeta (la número 1) una stringa, en la tercera gabeta (la número 2) un número de punto flotante\
-Este gabetero tiene una peculiaridad, puede tener un número de gabetas preestablecidas o se puede crear con una capacidad de ilimitadas gabetas (siempre según los limites de nuestro sistema) \
-que le agregamos "modularmente" en la medida lo vamos utilizando\. Lo realmente importante de estos arrays es la manera en como le guardamos información y como sacamos información de ellas. Para eso nos servimos \
-del llamado index\ o el número con el que vienen enumeradas las gabetas. El primer "slot" o gabeta tiene el número entero cero. Ilustremoslo así [ 0 ] recordando que las dos llaves cuadras (o corchetes) "[]" representan un array vacio.\
-En este otro array vas a ver un string con la palabra \'cero\' en el primer slot y con el número de punto flotante en el segúndo slot (de indice 1): [\'cero\', 1.0].\
-Observa que los slots estan separados por una coma. Ahora imagina que a nuestro arreglo lo llamamos gabetero literalmente.\ Para acceder el slot uno existe una sintaxis muy popular en muchos lenguajes de programación.\
-gabetero[0] nos dará el string \'cero\' y la sintaxis gabetero[1] que apunta al slot número dos nos dará el número de punto flotante 1.0\
-Esto lo estudiaremos muy bien cuando veamos las variables y las constantes.\
-Los arreglos son también tipos de dato del grupo de los objetos.\
+'¿Qué es una tupla?\n\n\
+Una tupla es un conjunto de variables, por lo general de diferentes tipos. El primer elemento de una tupla es el elemento 0, lo mismo que los arreglos (array)\
+Una característica importante es que las tuplas son inmutables (no pueden ser modificadas).\
 '
 
 var content =
@@ -124,6 +116,7 @@ Tipos de datos\n\n\
 /float\n\
 /string\n\
 /array\n\
+/tuple\n\
 '
 
 // Start command
@@ -169,6 +162,10 @@ app.command('/string', ( ctx ) => {
 
 app.command('/array', ( ctx ) => {
     ctx.reply(arreglo)
+})
+
+app.command('/tuple', ( ctx ) => {
+    ctx.reply(tupla)
 })
 
 app.command('/contenido', ( ctx ) => {
